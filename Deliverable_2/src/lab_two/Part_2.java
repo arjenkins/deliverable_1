@@ -23,34 +23,33 @@ package lab_two;
 				
 				
 				// user prompts to enter dates
-				System.out.println(" Enter the end year of the first date (highest date): ");
+				System.out.println("Please enter the end date (most current month, day, year).");
+				System.out.print("Enter the month: ");
+				userMonth1 = scnr.nextInt();
+				System.out.print("Enter the day: ");
+				userDay1 = scnr.nextInt();
+				System.out.print("Enter the year: ");
 				userYear1 = scnr.nextInt();
 				
-				System.out.println("Enter the end day of the first date (highest date): ");
-				userDay1 = scnr.nextInt();
 				
-				System.out.println("Enter the end month of the first date (highest date): ");
-				userMonth1 = scnr.nextInt();
-				
-				System.out.println("Enter the start year of the second date (lowest date): " );
-				userYear2 = scnr.nextInt();
-				
-				System.out.println("Enter the start day of the second date (lowest date): ");
-				userDay2 = scnr.nextInt();
-				
-				System.out.println("Enter the start month of the second date (lowest date): ");
+				System.out.println("Enter the start date (earliest month, day, year)." );
+				System.out.print("Enter the month: ");
 				userMonth2 = scnr.nextInt();
-				
-				System.out.println("This is the end date: " + userMonth1 + ", " + userDay1 + ", " + userYear1);
+				System.out.print("Enter the day: ");
+				userDay2 = scnr.nextInt();
+				System.out.print("Please enter the year: ");
+				userYear2 = scnr.nextInt();
+		
+		
 				System.out.println("This is the start date: " + userMonth2 + ", " + userDay2 + ", " + userYear2);
-				
+				System.out.println("This is the end date: " + userMonth1 + ", " + userDay1 + ", " + userYear1);
 				
 				//used to compute difference of dates
 				finalMonth = userMonth1 - userMonth2; 
 				finalDay = userDay1 - userDay2; 
 				finalYear = userYear1 - userYear2;
 				
-				System.out.println("The difference between dates is " + finalMonth + " months, " + finalDay + " days, " + finalYear + " years.");
+				System.out.println("The difference between dates is " + finalYear + " years, " + finalMonth + " months, " + finalDay + " and days.");
 				
 			
 	
